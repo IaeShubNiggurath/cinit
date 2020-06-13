@@ -34,11 +34,10 @@ def main():
         #dev = ConnectHandler(device_type         = 'cisco_ios_telnet',
         #                     host                =  args.host,
         #                     port                =  port,
-        #                     username            = 'thalo',
+        #                     username            = '------',
         #                     password            =  passwd,
         #                     global_delay_factor =  4,
         #                     secret              =  passwd,
-        #                     session_log         = "output.txt",
         #                     verbose             =  True)
 
         # CHANGE - just for testing
