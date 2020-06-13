@@ -1,8 +1,8 @@
 # Cinitco
 
-> Cisco Init and Configure Python Script
+> Cisco Init and Configure Python Script.
 
 
 ### TODO:
 * Argparser - more logic
-* A lot stuff to do. ;) 
+* A lot stuff to do. ;)
