@@ -9,8 +9,8 @@ import logging
 
 
 # Own Libs
-import lib_config as libco
-import args       as args
+import libcinit as libco
+import args     as args
 
 
 # Logging

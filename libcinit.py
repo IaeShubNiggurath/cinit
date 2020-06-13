@@ -1,4 +1,3 @@
-import argparse
 
 # VARS
 DOT1Q          = 'switchport trunk encapsulation dot1q'
