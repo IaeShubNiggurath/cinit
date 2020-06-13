@@ -1,23 +1,30 @@
 #!/usr/bin/python3
 
+
 # Standard Libs
 from netmiko import ConnectHandler
 from sys     import exit
 from getpass import getpass
 import logging
 
-# Own lib
-import lib_config as libco
-import args       as args 
 
+# Own Libs
+import lib_config as libco
+import args       as args
+
+
+# Logging
 logging.basicConfig(filename='debug.log', level=logging.DEBUG)
 logger = logging.getLogger("netmiko")
 
+
+# Get Password
 passwd  = getpass()
 
-
+# MAIN Function
 def main():
 
+    # Get the Argument ( CHANGE IS TODO !! )
     args = libco.parser.parse_args()
 
     for indx, port in enumerate(args.ports):
@@ -34,6 +41,7 @@ def main():
         #                     session_log         = "output.txt",
         #                     verbose             =  True)
 
+        # CHANGE - just for testing
         CMD = libco.init_config(args.device, (indx + 1), passwd)
 
         print("[!!] - Configure Device nr. {} - {}".format((indx + 1), CMD[0]))
@@ -45,6 +53,7 @@ def main():
         print("{}".format(output))
         print("----------- END -----------")
         #dev.disconnect()
+
 
 if __name__ == '__main__':
     main()
