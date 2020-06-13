@@ -9,8 +9,8 @@ import logging
 
 
 # Own Libs
-import libcinit as libco
-import args     as args
+from   libs import libcinit as libco
+import libs.args            as _args
 
 
 # Logging
@@ -25,7 +25,7 @@ passwd  = getpass()
 def main():
 
     # Get the Argument ( CHANGE IS TODO !! )
-    args = libco.parser.parse_args()
+    args = _args.parser.parse_args()
 
     for indx, port in enumerate(args.ports):
 
